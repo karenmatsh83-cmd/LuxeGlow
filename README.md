@@ -29,7 +29,7 @@ LuxeGlow
 - images
   - luxeglow-logo.png
 
-![LuxeGlow Logo](images/luxeglow-logo.png)
+![LuxeGlow Logo](./images/luxeglow-logo.png)
 ## Purpose
 
 The purpose of the website is to provide customers with an easy way to learn about LuxeGlow Beauty & Cosmetics and explore its products and services.
