@@ -1,22 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Enquiry - LuxeGlow</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Make an Enquiry | LuxeGlow Beauty & Cosmetics</title>
+
+    <meta name="description" content="Contact LuxeGlow Beauty and Cosmetics with questions about our beauty products and services.">
+
+    <meta name="keywords" content="LuxeGlow, beauty products, cosmetics, skincare, makeup enquiry">
+
+    <link rel="stylesheet" href="Style.css">
 </head>
 
 <body>
 
     <header>
         <img src="images/luxeglow-logo.png"
-     srcset="images/luxeglow-logo.png 400w,
-             images/luxeglow-logo.png 800w"
-     sizes="(max-width: 600px) 150px, 180px"
-     alt="LuxeGlow Beauty & Cosmetics Logo">
+             srcset="images/luxeglow-logo.png 400w,
+                     images/luxeglow-logo.png 800w"
+             sizes="(max-width: 600px) 150px, 180px"
+             alt="LuxeGlow Beauty & Cosmetics Logo">
 
         <h1>Make an Enquiry</h1>
-
         <p>We are happy to help you</p>
     </header>
 
@@ -29,7 +36,6 @@
     </nav>
 
     <main>
-
         <section>
             <h2>Contact LuxeGlow</h2>
 
@@ -38,30 +44,35 @@
                 please complete the form below.
             </p>
 
-            <form>
+            <form id="enquiry-form">
 
                 <label for="name">Full Name:</label><br>
-                <input type="text" id="name" name="name"><br><br>
+                <input type="text" id="name" name="name" required minlength="2">
+                <br><br>
 
                 <label for="email">Email Address:</label><br>
-                <input type="email" id="email" name="email"><br><br>
+                <input type="email" id="email" name="email" required>
+                <br><br>
 
                 <label for="subject">Subject:</label><br>
-                <input type="text" id="subject" name="subject"><br><br>
+                <input type="text" id="subject" name="subject" required>
+                <br><br>
 
                 <label for="message">Your Enquiry:</label><br>
-                <textarea id="message"
-                          name="message"
-                          rows="5"
-                          cols="30"></textarea><br><br>
+                <textarea id="message" name="message"
+                          rows="5" cols="30"
+                          required minlength="10"></textarea>
+                <br><br>
 
                 <input type="submit" value="Submit Enquiry">
 
             </form>
-        </section>
 
+            <p id="form-message" role="status"></p>
+        </section>
     </main>
 
-</body>
+    <script src="script.js"></script>
 
+</body>
 </html>

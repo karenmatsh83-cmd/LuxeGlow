@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://karenmatsh83-cmd.github.io/LuxeGlow/sitemap.xml 
